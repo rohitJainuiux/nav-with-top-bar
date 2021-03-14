@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* topbar style */
+.topbar{
+    padding: 20px 0;
+    background: rgb(30, 226, 30);
+}
+.top_container{
+    position: relative;
+}
+.top_contact span{
+    color: #fff;
+}
+
+.top_container .top_right{
+    display: flex;
+    position: absolute;
+    right:0;
+}
+.top_search{
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 4px 30px;
+    margin-top: -4px;
+    width: 320px;
+}
+.social_items  ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.social_items  ul li{
+    padding :0 20px
+}
+.social_items  ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:992px){
+    .social_items{
+        display: none;
+    }
+
+    .top_search{
+        outline: none;
+        border: none;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        padding: 4px 30px;
+        margin-top: -4px;
+        width: auto;
+    }
+    .main_nav{
+        width: 100% !important;
+    }
+
+    
+}
+
+@media (max-width: 768px){
+
+    .main_nav, .main_nav, .main_nav {
+        max-width: 98% !important;
+    }
+}
+
+
+@media (max-width: 576px){
+  .main_nav,  .main_nav {
+        max-width: 98% !important;
+    }
+    
+    .top_search{
+        outline: none;
+        border: none;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        padding: 4px 10px;
+        margin-top: -4px;
+        width: 5%;
+    }
+}
+
+
+
+
+/* topbar style end */
+
+/* main navbar style start */
+.navbar{padding: 20px 0;}.navbar .nav-item{
+    padding: 0 4px;
+}
+.nav-item a{
+    cursor: pointer;
+}
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+  
